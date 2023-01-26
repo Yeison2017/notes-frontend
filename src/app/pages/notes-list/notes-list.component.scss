@@ -1,0 +1,21 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  padding-top: 50px;
+
+  @media screen and (max-width: 420px) {
+    max-width: 90%;
+    padding-top: 1rem;
+  }
+}
+
+.notes-list {
+  margin-top: 35px;
+}
+
+app-note-card {
+  display: block;
+  margin-bottom: 25px;
+}
