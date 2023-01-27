@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Note } from 'src/app/shared/note.model';
+import { NotesService } from '../../shared/notes.service';
 
 @Component({
   selector: 'app-note-details',
@@ -10,9 +11,11 @@ import { Note } from 'src/app/shared/note.model';
 export class NoteDetailsComponent implements OnInit {
   note: Note = new Note();
 
-  constructor() {}
+  constructor(private _notesService: NotesService) {}
 
   ngOnInit(): void {}
 
-  onSubmit(form: NgForm) {}
+  onSubmit(form: NgForm) {
+    this._notesService.add(form.value);
+  }
 }
