@@ -15,11 +15,11 @@
     <!-- <app-note-card [title]="cardTitle" [body]="cardBody"></app-note-card> -->
     <app-note-card
       *ngFor="let note of notes"
-      title="note.title"
-      body="note.body"
+      [title]="note.title"
+      [body]="note.body"
     ></app-note-card>
+    <button class="button floating-add-button is-primary" routerLink="new">
+      + Add
+    </button>
   </div>
-  <button class="button floating-add-button is-primary" routerLink="new">
-    + Add
-  </button>
 </div>

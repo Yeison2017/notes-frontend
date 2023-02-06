@@ -8,7 +8,7 @@ import { NotesService } from 'src/app/shared/notes.service';
   styleUrls: ['./notes-list.component.scss'],
 })
 export class NotesListComponent implements OnInit {
-  notes: Note[] = [];
+  notes: Note[] = new Array<Note>();
 
   constructor(private _notesService: NotesService) {}
 
