@@ -2,7 +2,12 @@
   <div class="search-bar-container">
     <div class="field">
       <p class="control has-icons-left">
-        <input class="input" type="text" placeholder="Filter" />
+        <input
+          class="input"
+          type="text"
+          (keyup)="filter($event.target)"
+          placeholder="Filter"
+        />
 
         <span class="icon is-small is-left">
           <i class="fas fa-search"></i>
@@ -14,7 +19,7 @@
   <div class="notes-list" [@listAnim]>
     <!-- <app-note-card [title]="cardTitle" [body]="cardBody"></app-note-card> -->
     <app-note-card
-      *ngFor="let note of notes; index as i"
+      *ngFor="let note of filteredNotes; index as i"
       [link]="i.toString()"
       [@itemAmin]
       (delete)="deleteNote(i)"
@@ -26,3 +31,6 @@
     </button>
   </div>
 </div>
+
+<!-- (keyup)="$event && $event.target ? filter($event.target.value) : null" -->
+<!-- (keyup)="$event.target ? filter($event.target) : ''" -->

@@ -8,12 +8,12 @@ export class NotesService {
   // notes: Note[] = new Array<Note>();
   notes: Note[] = [
     { title: 'Title 1', body: 'body 1' },
-    { title: 'Title 2', body: 'body 2' },
-    { title: 'Title 3', body: 'body 3' },
-    { title: 'Title 4', body: 'body 4' },
-    { title: 'Title 5', body: 'body 5' },
-    { title: 'Title 6', body: 'body 6' },
-    { title: 'Title 7', body: 'body 7' },
+    { title: 'asdfsdf 2', body: 'body 2' },
+    { title: 'basdah 3', body: 'body 3' },
+    { title: 'cfgsad 4', body: 'body 4' },
+    { title: 'dgdfsd 5', body: 'body 5' },
+    { title: 'ahvwef 6', body: 'body 6' },
+    { title: 'bdfhag 7', body: 'body 7' },
     { title: 'Title 7', body: 'body 7' },
     { title: 'Title 7', body: 'body 7' },
     { title: 'Title 7', body: 'body 7' },
