@@ -3,6 +3,7 @@
     <div class="field">
       <p class="control has-icons-left">
         <input
+          #filterInput
           class="input"
           type="text"
           (keyup)="filter($event.target)"
@@ -17,12 +18,11 @@
   </div>
 
   <div class="notes-list" [@listAnim]>
-    <!-- <app-note-card [title]="cardTitle" [body]="cardBody"></app-note-card> -->
     <app-note-card
-      *ngFor="let note of filteredNotes; index as i"
-      [link]="i.toString()"
+      *ngFor="let note of filteredNotes"
+      [link]="generateNoteURL(note).toString()"
       [@itemAmin]
-      (delete)="deleteNote(i)"
+      (delete)="deleteNote(note)"
       [title]="note.title"
       [body]="note.body"
     ></app-note-card>
@@ -31,6 +31,3 @@
     </button>
   </div>
 </div>
-
-<!-- (keyup)="$event && $event.target ? filter($event.target.value) : null" -->
-<!-- (keyup)="$event.target ? filter($event.target) : ''" -->
