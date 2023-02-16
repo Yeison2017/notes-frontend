@@ -1,27 +1,28 @@
-# NotesFrontend
+# Proyecto de Notas con Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Este es un proyecto de una página web desarrollada con Angular que permite a los usuarios registrar, editar y eliminar notas, cada una con un título y una descripción. La página es responsiva y está en inglés. Para la apariencia visual se utilizó el Framework Bulma y Sass.
 
-## Development server
+## Tecnologías principales
+![icono de Angular](https://res.cloudinary.com/dyvccdkkl/image/upload/v1675897057/Iconos/Angular_ixnav0.png) Angular  
+![icono de LocalStorage](https://res.cloudinary.com/dyvccdkkl/image/upload/v1675910787/Iconos/LocalStorage_a330oa.png) LocalStorage  
+![icono de Bulma](https://res.cloudinary.com/dyvccdkkl/image/upload/v1675897057/Iconos/Bulma_lqekwq.png) Bulma  
+![icono de Sass](https://res.cloudinary.com/dyvccdkkl/image/upload/v1675897058/Iconos/Sass_zhshzx.png) Sass  
+## Capturas de pantalla
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A continuación se presentan capturas de pantalla de la página en desktop y móvil:
 
-## Code scaffolding
+![desktop1](./src/assets/screenshots/Desktop1.jpg)
+![desktop2](./src/assets/screenshots/Desktop2.jpg)
+![mobile1](./src/assets/screenshots/Mobile1.jpg)
+![mobile2](./src/assets/screenshots/Mobile2.jpg)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Créditos
 
-## Build
+Este proyecto fue creado a partir de un video tutorial de YouTube del canal [Devstackr](https://www.youtube.com/channel/UCbwsS1m4Hib6R-9F1alus_A). El tutorial en particular es [Angular Tutorial - Build a CRUD App with Angular 12](https://www.youtube.com/watch?v=gvWxMQ_Zios&list=PLSvtEtsyp826ID5XmG3Y_YFBNswA1NK77&index=1).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Comparación de tecnologías y características
 
-## Running unit tests
+Una diferencia importante entre el proyecto del video tutorial y este proyecto es que el del video no incluía un método para almacenar las notas, mientras que en este proyecto se utiliza LocalStorage para guardar las notas en el navegador del usuario. Además, se implementa responsividad de la página.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Enlace
+Puedes ver la página web en funcionamiento en el siguiente enlace: [Live site URL](https://notes-yha.netlify.app/).
