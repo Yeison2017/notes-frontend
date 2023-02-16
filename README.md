@@ -1,4 +1,4 @@
-# Proyecto de Notas con Angular
+# Notas
 
 Este es un proyecto de una página web desarrollada con Angular que permite a los usuarios registrar, editar y eliminar notas, cada una con un título y una descripción. La página es responsiva y está en inglés. Para la apariencia visual se utilizó el Framework Bulma y Sass.
 
@@ -25,4 +25,4 @@ Este proyecto fue creado a partir de un video tutorial de YouTube del canal [Dev
 Una diferencia importante entre el proyecto del video tutorial y este proyecto es que el del video no incluía un método para almacenar las notas, mientras que en este proyecto se utiliza LocalStorage para guardar las notas en el navegador del usuario. Además, se implementa responsividad de la página.
 
 ## Enlace
-Puedes ver la página web en funcionamiento en el siguiente enlace: [Live site URL](https://notes-yha.netlify.app/).
+Puedes ver la página web en funcionamiento en el siguiente enlace: [URL del sitio](https://notes-yha.netlify.app/).
